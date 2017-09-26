@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Аренда квартир</title>
+</head>
+<body>
+  <form id="addflat">
+    <div class="contacts">
+      <label class="contacts__label">Имя:
+        <input class="contacts__input" type="text" name="owner" required="required"/>
+      </label>
+      <label class="contacts__label">Телефон:
+        <input class="contacts__input" type="tel" name="phone" required="required"/>
+      </label>
+      <label class="contacts__label">Цена:
+        <input class="contacts__input" type="text" name="price" required="required"/>
+      </label>
+      <label class="contacts__label">Адрес:
+        <input class="contacts__input" type="text" name="address" required="required"/>
+      </label>
+    </div>
+    <textarea class="contacts__textarea" required="required" placeholder="Описание"></textarea>
+    <button class="btn blue">Опубликовать</button>
+    <input class="btn blue" type="reset"/>
+  </form>
+  <button class="btn blue" onclick="show()">Сдать квартиру</button>
+  <h1>Список Квартир:</h1>
+  <div id="flats"></div>
+
+  <div class="order">
+    <form class="order__content">
+      <label class="order__label">Имя:
+        <input class="order__input" type="text"/ name="client" required="required">
+      </label><br/>
+      <label class="order__label">Телефон:
+        <input class="order__input" type="tel"/ name="clientPhone" required="required">
+      </label><br/>
+      <label class="order__label">Срок аренды:
+        <input class="order__input" type="number"/ name="lease" required="required">
+      </label>
+      <hr/>
+      <div class="order__description"></div>
+      <hr/>
+      <div class="order__buttons">
+        <button class="order__button btn blue">Заказать</button>
+        <button class="order__button btn blue" onclick="closePopup()">Отменить</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="admin.js"></script>
+  <script>renderFlats()</script>
+</body>
+</html>

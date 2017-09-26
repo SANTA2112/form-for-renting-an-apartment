@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  padding: 12px;
+}
+
+#addflat {
+  width: 600px;
+  padding: 6px;
+  display: none;
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  box-shadow: 2px 2px 16px grey;
+}
+
+#addflat.active {
+  display: block;
+}
+
+#flats {
+  margin-top: 12px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contacts__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: calc(100% / 3);
+  font-size: 18px;
+}
+.contacts__input {
+  margin: 0 4px 4px;
+  width: 100%;
+}
+.contacts__textarea {
+  width: calc(100% - 4px);
+  height: 100px;
+  resize: none;
+}
+
+.order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+.order hr {
+  margin: 12px 0;
+}
+.order__content {
+  width: 600px;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #fff;
+}
+.order__description {
+  margin: 6px 0;
+}
+.order__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.order__button {
+  height: 40px;
+  width: 80px;
+  border-radius: 12px;
+  font-size: 12px;
+  outline: none;
+}
+
+
+.flat {
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  box-shadow: 2px 2px 16px grey;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 6px ;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 2px);
+  -webkit-transform: translate(0px, 2px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 2px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+
+input[type="text"], input[type="tel"],input[type="number"] {
+  border: none;
+  border-bottom: 2px solid #55ACAA;
+  font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="number"]:focus {
+  border-bottom: 2px solid #55ACEE;
+}
+
+textarea {border: 2px solid #55ACAA; margin-top: 12px;font-size: 16px;}
+textarea:focus {border: 2px solid #55ACEE;}
+
+
